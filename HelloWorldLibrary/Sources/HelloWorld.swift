@@ -14,4 +14,8 @@ class HelloWorld {
         print("Hello \(name)")
     }
     
+    open func sayGoodBye() {
+        print("Good bye!")
+    }
+    
 }
