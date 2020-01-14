@@ -10,6 +10,7 @@
 		47EF4F8023CE3B2F009E7EB8 /* HelloWorldLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47EF4F7623CE3B2F009E7EB8 /* HelloWorldLibrary.framework */; };
 		47EF4F8523CE3B2F009E7EB8 /* HelloWorldLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EF4F8423CE3B2F009E7EB8 /* HelloWorldLibraryTests.swift */; };
 		47EF4F8723CE3B2F009E7EB8 /* HelloWorldLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 47EF4F7923CE3B2F009E7EB8 /* HelloWorldLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47EF4F9123CE3B3E009E7EB8 /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EF4F9023CE3B3E009E7EB8 /* HelloWorld.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		47EF4F7F23CE3B2F009E7EB8 /* HelloWorldLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47EF4F8423CE3B2F009E7EB8 /* HelloWorldLibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldLibraryTests.swift; sourceTree = "<group>"; };
 		47EF4F8623CE3B2F009E7EB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47EF4F9023CE3B3E009E7EB8 /* HelloWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorld.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				47EF4F7923CE3B2F009E7EB8 /* HelloWorldLibrary.h */,
+				47EF4F9023CE3B3E009E7EB8 /* HelloWorld.swift */,
 				47EF4F7A23CE3B2F009E7EB8 /* Info.plist */,
 			);
 			path = HelloWorldLibrary;
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					47EF4F7523CE3B2F009E7EB8 = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 					};
 					47EF4F7E23CE3B2F009E7EB8 = {
 						CreatedOnToolsVersion = 11.3;
@@ -195,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47EF4F9123CE3B3E009E7EB8 /* HelloWorld.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 		47EF4F8B23CE3B2F009E7EB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = R2NJ3KFQ2P;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexandrecools.HelloWorldLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		47EF4F8C23CE3B2F009E7EB8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = R2NJ3KFQ2P;
@@ -388,6 +396,7 @@
 		47EF4F8E23CE3B2F009E7EB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R2NJ3KFQ2P;
 				INFOPLIST_FILE = HelloWorldLibraryTests/Info.plist;
@@ -406,6 +415,7 @@
 		47EF4F8F23CE3B2F009E7EB8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R2NJ3KFQ2P;
 				INFOPLIST_FILE = HelloWorldLibraryTests/Info.plist;
