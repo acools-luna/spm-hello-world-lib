@@ -22,9 +22,5 @@ let package = Package(
             name: "HelloWorldLibrary",
             dependencies: [],
 	    path: "HelloWorldLibrary/Sources"),
-        .testTarget(
-            name: "HelloWorldLibraryTests",
-            dependencies: ["HelloWorldLibrary"],
-	    path: "HelloWorldLibraryTests/Sources"),
     ]
 )
