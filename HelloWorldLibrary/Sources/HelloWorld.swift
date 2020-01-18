@@ -15,7 +15,7 @@ class HelloWorld {
     }
     
     open func sayGoodBye() {
-        print("Good bye!")
+        print("Good bye! See u!")
     }
     
 }
